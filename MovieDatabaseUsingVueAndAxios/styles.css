@@ -1,0 +1,74 @@
+/*
+* Chris de Leon
+* 11/14/2022
+* CIS131 - Movie Database Using Vue.js
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+button {
+    width: 10%;
+    padding: 12px;
+    transition: all .3s ease;
+    border-color: #6290C8;
+    background-color: white;
+    margin-left: 45%;
+
+}
+
+button:hover {
+    border-radius: 20px;
+    border-color: #6290C8;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  33px 33px 66px #bebebe,
+             -33px -33px 66px #ffffff;
+}
+
+.boxes p {
+    width: 80%;
+}
+
+.boxes img {
+    max-width: 300px;
+}
+
+#highlight {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.random{
+    text-align: center;
+}
+
+.random:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}

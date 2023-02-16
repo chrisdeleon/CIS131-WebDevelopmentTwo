@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Chris de Leon -->
+    <!-- 11/14/2022 -->
+    <!-- CIS131 Movie Database Using Vue.js -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script> <!-- Vue.js link -->
+    <title>Movie Database Using Vue and Axios</title>
+</head>
+<body>
+    <div id="app">
+        <h1 class="title">{{pageTitle}}</h1>
+        <button v-on:click="movieLoad" id="button">Load Movies</button>
+        <div id="highlight"> <!-- this will show a random movie at the top of the page-->
+            <h2  v-on:click="randomMovie" class="random">{{randomTitle}}</h2>
+            <img v-bind:src="randomImage">
+            <p>{{randomOverview}}</p>
+
+        </div>
+        <div v-for="item in items" class="boxes"> <!-- put the for each loop in this div to create separate divs for each item-->
+            <h2>{{ item.title }}</h2>
+            <img v-bind:src="item.imgSrc">
+            <p>{{ item.overview }}</p>
+        </div>
+    </div>
+
+    
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

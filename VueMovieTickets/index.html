@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script> <!-- Vue.js link -->
+    <!-- Chris de Leon -->
+    <!-- 11/23/2022 -->
+    <!-- CIS131 - Vue Movie Tickets Project -->
+    <title>Vue Movie Tickets</title>
+</head>
+<body>
+    <nav class="header">
+            <a href="index.html" class="logo">OTC Movie Theatres</a>
+        <nav class="header-right">
+            <a href="index.html">Home</a>
+            <a href="#">Contact</a>
+            <button class="shoppingCart" id="cartOpen"><img src="images/shoppingCart.svg" alt="Shopping Cart" class="svg"></button><p class="count" id="count"></p>
+        </nav>
+    </nav>
+    
+    <!-- END NAV BAR -->
+    <div id="app" class="container">
+        <div v-for="movies in nowPlayingArray" class="movieCard">
+            <img v-bind:src="'https://image.tmdb.org/t/p/w300//' + movies.poster_path" class="movieImage">
+            <h2 id="title">{{ movies.title }}</h2>
+            <div>
+                <p class="description" id="description">{{ movies.overview }}</p>
+            </div>
+            <button class="addToCart" id="adultTickets" v-on:click="addAdult(movies.title)">Buy Adult Tickets</button>
+            <button class="addToCart" id="childrenTickets" v-on:click="addChild(movies.title)">Buy Children Tickets</button>
+        </div>
+    <!-- Popup -->
+
+        <div class="popup" id="popup">
+            <div class="cardHeader">
+                <h2>Order Summary</h2>
+                <img src="images/minimize.svg" alt="" class="minimize" id="popupClose">
+            </div>
+            <div class="labelContainer">
+                <h4>Movie</h4>
+                <h4>Adult Tickets</h4>
+                <h4>Children Tickets</h4>
+                <h4>Total</h4>
+            </div>
+            <div class="summaryContainer" v-for="(movies, i) in nowPlayingArray" :key="i" :id="i">
+                <img v-bind:src="'https://image.tmdb.org/t/p/w300//' + movies.poster_path" alt="" class="summaryImage">
+                <div class="qty"><p>0</p><img src="images/minus.svg"></div>
+                <div class="qty"><p>0</p><img src="images/minus.svg"></div>
+                <div class="total"><p>0</p><button :id="i">remove</button></div>
+            </div>
+            <div class="orderDetails" id="app2">
+                <h4>{{ adultTickets }} adult tickets @ $13.00/ticket = ${{ adultSubTotal }}</h4>
+                <h4>{{ childrenTickets }} children tickets @ $8.00/ticket =  ${{ childrenSubTotal }}</h4>
+                <h4>Subtotal: ${{ subtotal }}</h4>
+                <h4>Total: ${{ formattedTotal }}</h4>
+                <p>all sales taxes at 8.1%</p>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

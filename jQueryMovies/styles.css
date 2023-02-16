@@ -1,0 +1,45 @@
+/* 
+* Chris de Leon - jQuery Movies Project
+* 10/31/2022
+* CIS131
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    text-decoration: none;
+}
+
+#title {
+    text-align: center;
+    cursor: default;
+}
+
+h1 {
+    margin-bottom: 2%;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+p {
+    margin-bottom: 2%;
+}
+
+#container {
+    margin-left: 20px;
+}
+
+.image0, .image1, .image2 {
+    display: none;
+}

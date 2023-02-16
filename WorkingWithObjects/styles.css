@@ -1,0 +1,88 @@
+/*  Chris de Leon
+    CIS131
+    9/30/2022
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+body {
+    background: url("background.svg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    background-color: #f9e4ab;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+#name {
+    text-align: center;
+}
+
+#contactList {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactList li {
+    text-align: center;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+#contactList li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+
+
+}
+
+form {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.25rem;
+    box-shadow:
+  1px 2.1px 4.6px rgba(0, 0, 0, 0.028),
+  3.4px 6.9px 15.4px rgba(0, 0, 0, 0.042),
+  15px 31px 69px rgba(0, 0, 0, 0.07)
+;
+}
+
+form label {
+    margin-top: 20px;
+}
+
+form input {
+    width: 75%;
+}
+
+#submit {
+    margin-top: 20px;
+    padding: 8px;
+}
