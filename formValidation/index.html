@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Chris de Leon -->
+    <!-- 9/24/2022 -->
+    <!-- CIS131 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cheech's Pizza</title>
+    <link rel="icon" type="image/x-icon" href="pizza-slice.svg">
+</head>
+<body>
+    <!-- ------- -->
+    <!-- NAV BAR -->
+    <!-- ------- -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" class="brand"><img src="pizza-slice.svg" alt="logo"> Cheech's Pizza</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Order</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="left">
+            <!-- ------------ -->
+            <!-- FORM SECTION -->
+            <!-- ------------ -->
+            <h1>Place an Order!</h1>
+            <form action="thankyou.html" id="form">
+                <input type="text" placeholder="Name" name="name"><span id="errorName"></span>
+                <input type="text" placeholder="Phone Number" name="number"><span id="errorNumber"></span>
+                <select name="flavor" id="flavor">
+                    <option disabled selected value> --- select an option --- </option>
+                </select><span id="errorFlavor"></span>
+                <select name="quantity" id="quantity">
+                    <option disabled selected value> --- select a quantity --- </option>
+                </select><span id="errorQty"></span>
+                <input type="button" onclick="checkForm(this.form)" value="Submit">
+            </form>
+        </div>
+        <div class="right">
+            
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

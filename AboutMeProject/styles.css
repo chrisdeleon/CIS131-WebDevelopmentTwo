@@ -1,0 +1,319 @@
+* {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+.firstviewport {
+	height: 100vh;
+	background-image: url('landing-wave.svg');
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.navbar {
+	padding-top: 1.5em;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	width: 90%;
+	justify-content: space-between;
+	font-size: 1.75vw;
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-item a:hover {
+	opacity: 0.4;
+	transition: 0.3s ease;
+}
+
+.wrapper {
+	height: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.name {
+	font-size: 6vw;
+}
+
+.title {
+	font-size: 3vw;
+	font-weight: normal;
+}
+
+.decoration {
+	width: 40%;
+	border: none;
+	outline: none;
+	background-color: #DCC48E;
+	border-radius: 12px;
+	padding: 10px;
+	color: #DCC48E;
+	margin-top: 2em;
+	box-shadow:
+	  4.5px 4.5px 3.6px rgba(0, 0, 0, 0.035),
+	  12.5px 12.5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact {
+	text-decoration: none;
+	margin-top: 1.8em;
+	text-align: center;
+	border: none;
+	outline: none;
+	background-color: #27233A;
+	color: white;
+	font-size: 1.25vw;
+	width: 25%;
+	border-radius: 12px;
+	padding: 20px;
+	cursor: pointer;
+	box-shadow:
+	  2.5px 1.1px 10px rgba(0, 0, 0, 0.07),
+	  20px 9px 80px rgba(0, 0, 0, 0.14);
+
+
+
+
+
+
+}
+
+.contact:hover {
+	opacity: 0.4;
+	transition: 0.2s;
+}
+
+.profilepicture {
+	width: 25vw;
+	border-radius: 50%;
+	box-shadow:
+  3.8px 1.1px 10px rgba(0, 0, 0, 0.06),
+  30px 9px 80px rgba(0, 0, 0, 0.12)
+;
+
+
+
+}
+
+.left {
+	padding-left: 14em;
+}
+
+.right {
+	display: flex;
+	align-items: center;
+}
+
+
+
+ /* SECOND VIEW PORT */
+
+
+.secondviewport {
+	height: 100vh;
+	background-image: url('middle-blob.svg');
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 100%;
+
+	
+}
+
+.column {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-title {
+	font-size: 3vw;
+}
+
+.about-text {
+	font-size: 1.5vw;
+	text-align: center;
+	margin-top: 3em;
+}
+
+.projectimg {
+	width: 100%;
+	box-shadow:
+  3.8px 1.1px 12.5px rgba(0, 0, 0, 0.06),
+  30px 9px 100px rgba(0, 0, 0, 0.12);
+}
+
+.projectimg:hover {
+	opacity: 0.8;
+	transition: 0.5s ease-out;
+}
+
+.project-text {
+	font-size: 1.5vw;
+	text-align: center;
+	width: 80%;
+
+}
+
+.project-text a {
+	color: black;
+}
+
+.project-text a:hover {
+	border-radius: 12px;
+	background-color: #DCC48E;
+	transition: 0.3s ease;
+	text-decoration: none;
+}
+
+.spacer-left {
+	margin-top: 10em;
+	margin-bottom: 5em;
+
+}
+
+.spacer-right {
+	margin-bottom: 10em;
+}
+
+/* THIRD VIEW PORT */
+
+.thirdviewport {
+	height: 100vh;
+	background-image: url('bottom waves.svg');
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	text-align: center;
+}
+
+.contact-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.contact-text h1 {
+	font-size: 3vw;
+	font-weight: normal;
+	margin-top: 1.5em;
+}
+
+.contact-text h4 {
+	font-weight: normal;
+	font-size: 1.5vw;
+	margin-top: 1.5em;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 60%;
+	gap: 3em;
+	font-size: 1.5vw;
+}
+
+.form button {
+	width: 10%;
+	border: none;
+	outline: none;
+	background-color: #DCC48E;
+	border-radius: 12px;
+	padding: 10px;
+	box-shadow:
+	  4.5px 4.5px 3.6px rgba(0, 0, 0, 0.035),
+	  12.5px 12.5px 10px rgba(0, 0, 0, 0.05);
+	  font-size: 1.5vw;
+	cursor: pointer;
+}
+
+.form button:hover {
+	background-color: #b5a072;
+	transition: 0.3s ease-out;
+}
+
+footer {
+	margin-top: 3em;
+}
+
+.fa {
+  	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* FOR FUN */
+
+.activity-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	height: 80%;
+	text-align: center;
+
+}
+
+.fun-header{
+	margin-top: 3em;
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+.act-column {
+}
+
+.activity-img {
+	height: 35vh;
+	border-radius: 50%;
+}
+
+.act-column p {
+	font-size: 1.5vw;
+	padding-top: 2em;
+}
+
+.goal-title {
+	font-size: 2vw;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.goal-text {
+	font-size: 1.5vw;
+	text-align: center;
+	line-height: 2em;
+	width: 80%;
+	margin: 0 auto;
+}

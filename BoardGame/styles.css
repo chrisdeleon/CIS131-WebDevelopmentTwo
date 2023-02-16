@@ -1,0 +1,251 @@
+/*  Chris de Leon
+*   10/7/2022
+*   CIS131 Midterm Project */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+
+body {
+    background-color: rgba(0, 0, 0, 1);
+    overflow-x: hidden;
+
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.square {
+    width: fit-content;
+    margin: 5vh auto;
+    margin-left: 20px;
+    position: absolute;
+}
+
+#topRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+#topRow div {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+#columnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#leftColumn{
+    display: inline-flex;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+
+#leftColumn div {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+}
+
+#rightColumn{
+    display: inline-flex;
+    flex-direction: column;
+    width: fit-content;
+
+}
+
+#rightColumn div {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+}
+
+#bottomRow{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+#bottomRow div {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+}
+
+.dice {
+    max-width: 40px;
+}
+
+#playerOne {
+    position: absolute;
+    left: 8%;
+    top: 25%;
+}
+
+#playerTwo {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+
+#diceContainer {
+    text-align: center;
+    display: none;
+    position: relative;
+    margin-top: 65vh;
+}
+
+#playerContainer {
+    position: relative;
+    margin-top: 2vh;
+}
+
+#capstone {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 25vw;
+}
+
+#capstone h1 {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.character {
+    max-width: 6vw;
+}
+
+#popup {
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 35%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    right: 33%;
+    background-color: white;
+    z-index: 3;
+    padding: 10px;
+}
+
+#popup h1 {
+    margin-bottom: 10px;
+}
+
+#popup p {
+    margin-bottom: 10px;
+}
+
+#popup button {
+    margin-bottom: 10px;
+}
+
+#popup button:hover {
+    cursor: pointer;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+.button {
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    color: #24292E;
+    cursor: pointer;
+    padding: 6px 16px;
+}
+
+.small {
+    max-width: 20px;
+}
+
+.canvas {
+    max-width: 60px;
+}
+
+#gradeAlert {
+    display: none;
+}
+
+#singleAlert {
+    display: none;
+}
+
+#card {
+    border: 1px solid black;
+    border-radius: 30px;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    width: 30vw;
+    height: 30vh;
+    text-align: center;
+    box-shadow:
+  1.4px 1.7px 3.6px rgba(0, 0, 0, 0.038),
+  3.8px 4.8px 10px rgba(0, 0, 0, 0.055),
+  9px 11.5px 24.1px rgba(0, 0, 0, 0.072),
+  30px 38px 80px rgba(0, 0, 0, 0.11)
+;
+}
+
+#grade {
+    margin-top: 20px;
+
+}
+
+#chance {
+    margin-top: 40px;
+    overflow-wrap: break-word;
+}
+
+.winner {
+    max-width: 20vw;
+}
+
+#playerOneClasses {
+    display: none;
+}
+
+#playerTwoClasses {
+    display: none;
+}
